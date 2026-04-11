@@ -1,0 +1,225 @@
+@font-face {
+	font-family: "Karla";
+	src: url("/font/Karla-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Karla";
+	src: url("/font/Karla-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #E0F1E7;
+	display: flex;
+	justify-content: center;
+	/* centraliza horizontal */
+	align-items: center;
+	/* centraliza vertical */
+	min-height: 100vh;
+	/* altura total da tela */
+}
+
+
+main {
+	width: 100%;
+	max-width: 700px;
+}
+
+h1 {
+	margin-bottom: 30px;
+	font-family: "Karla";
+}
+
+
+form {
+	display: inline-block;
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+
+}
+
+label {
+	font-family: "Karla";
+}
+
+
+.primeira-sessao {
+	display: flex;
+	gap: 10px;
+}
+
+/* cada botão ocupa metade */
+.primeira-sessao div {
+	flex: 1;
+}
+
+/* label ocupa toda largura do div */
+.primeira-sessao label input {
+	width: 100%;
+	align-items: center;
+	gap: 0.8em;
+}
+
+input {
+	border: 1px solid #cccaca;
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+input:focus,
+textarea:focus {
+	outline: none;
+	/* remove a borda padrão azul */
+	border: 2px solid #0C7D69;
+	/* cor ao clicar */
+}
+
+input[type="email"] {
+	width: 100%;
+}
+
+.text-name,
+.text-email {
+	font-size: 15px;
+}
+
+.text-email {
+	margin: 20px 0 20px;
+}
+
+.query-type {
+	font-size: 15px;
+}
+
+.obrigatorio {
+	margin-left: 5px;
+	color: green;
+}
+
+.terceira-sessao {
+	margin: 10px 0 20px;
+	display: flex;
+	gap: 10px;
+}
+
+/* cada botão ocupa metade */
+.terceira-sessao div {
+	flex: 1;
+}
+
+/* label ocupa toda largura do div */
+.terceira-sessao label {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	gap: 0.8em;
+}
+
+input[type="radio"] {
+	display: none;
+}
+
+/* Caixa em volta do nome */
+.terceira-sessao label {
+	position: relative;
+	color: #0C7D69;
+	font-family: "Karla" sans-serif;
+	cursor: pointer;
+	display: inline-flex;
+	gap: 0.8em;
+	border: 1px solid #cccaca;
+	padding: 10px 10px;
+	border-radius: 5px;
+}
+
+/* Parte do circulo */
+.terceira-sessao label::before {
+	content: "";
+	height: 1em;
+	width: 1em;
+	border: 1px solid #0C7D69;
+	border-radius: 50%;
+}
+
+/* Parte do circulo definindo stilo */
+input[type="radio"]:checked+label::before {
+	height: 10px;
+	width: 10px;
+	border: 2px solid #ffffff;
+	background-color: #0C7D69;
+}
+
+input[type="radio"]:checked+label {
+	background-color: #E0F1E7;
+	color: #000000;
+	border: 1px solid #0C7D69;
+
+}
+
+.text-area textarea {
+	display: block;
+}
+
+textarea {
+	border: 1px solid #cccaca;
+	border-radius: 5px;
+	width: 100%;
+	margin-top: 10px;
+	height: 15vh;
+	font-size: 15px;
+	font-family: 'Karla';
+	padding: 5px;
+}
+
+.confirmacao {
+	display: flex;
+	align-items: center;
+	/* centraliza verticalmente */
+	gap: 10px;
+	/* espaço entre checkbox e texto */
+	margin: 30px 0;
+}
+
+.confirmacao input[type="checkbox"] {
+	transform: scale(1.5);
+	margin: 0px 5px;
+	/* remove margens padrão */
+	position: relative;
+	top: 1px;
+	/* ajuste fino da posição */
+	accent-color: #0C7D69;
+	/* sua cor verde */
+}
+
+.confirmacao label {
+	cursor: pointer;
+}
+
+.submit button {
+	padding: 15px;
+	width: 100%;
+	background-color: #0C7D69;
+	color: #ffffff;
+	font-size: 15px;
+	font-family: "Karla", sans-serif;
+	border: 1px solid;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button[type="button"]:hover {
+	background-color: #12a68b;
+}
