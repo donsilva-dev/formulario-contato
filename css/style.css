@@ -188,7 +188,7 @@ textarea {
 	display: flex;
 	align-items: center;
 	/* centraliza verticalmente */
-	gap: 10px;
+	gap: 5x;
 	/* espaço entre checkbox e texto */
 	margin: 30px 0;
 }
@@ -220,6 +220,17 @@ textarea {
 	cursor: pointer;
 }
 
-button[type="button"]:hover {
-	background-color: #12a68b;
+/* Campo normal */
+
+/* Quando tiver erro */
+.error {
+  border-color: red;
+}
+
+/* Mensagem */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  display: block;
 }
