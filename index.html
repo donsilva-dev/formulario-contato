@@ -10,13 +10,14 @@
 
 <body>
 	<main>
-		<form action="" method="get">
+		<form action="" method="get" novalidate>
 			<h1>Contate-nos</h1>
 			<section class="primeira-sessao">
 				<!-- Primeiro nome -->
 				<div class="text-name">
 					<label for="name">Nome <span class="obrigatorio">*</span>
-						<input type="text" name="userName" id="name">
+						<input type="text" name="userName" id="name" required />
+						<small class="error-message"></small>
 					</label>
 				</div>
 				<!-- Primeiro nome -->
@@ -24,7 +25,8 @@
 				<!-- Sobrenome -->
 				<div class="text-name">
 					<label for="lastname">Sobrenome <span class="obrigatorio">*</span>
-						<input type="text" name="user-last-name" id="lastname">
+						<input type="text" name="user-last-name" id="lastname" required />
+						<small class="error-message"></small>
 					</label>
 				</div>
 				<!-- Sobrenome -->
@@ -33,7 +35,8 @@
 			<!-- Email -->
 			<div class="text-email">
 				<label for="email">Email <span class="obrigatorio">*</span>
-					<input type="email" name="userEmail" id="email">
+					<input type="email" name="userEmail" id="email" required>
+					<small class="error-message"></small>
 				</label>
 			</div>
 
@@ -55,20 +58,22 @@
 
 			<div class="text-area">
 				<label for="query-type">Menssagem<span class="obrigatorio">*</span></label>
-				<textarea name="user-comment" id="comment"></textarea>
+				<textarea name="user-comment" id="comment" required></textarea>
+				<small class="error-message"></small>
 			</div>
 
 			<div class="confirmacao">
-				<input type="checkbox" name="userLgpt" id="userLgptTerm" value="accepted" required>
+				<input type="checkbox" name="userLgpt" id="userLgptTerm" value="accepted" required />
+				<small class="error-message"></small>
 				<label for="userLgptTerm">Eu concordo em ser contatado pela equipe<span class="obrigatorio">*</span></label><br>
 			</div>
 
 			<div class="submit">
-				<button type="button">Submit</button>
+				<button type="submit">Submit</button>
 			</div>
-
 		</form>
 	</main>
+	<script src="js/scripts.js"></script>
 </body>
 
 </html>
