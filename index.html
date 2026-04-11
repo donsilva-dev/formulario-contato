@@ -1,11 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title>Formulário de contato</title>
 </head>
-<body>
 
+<body>
+	<main>
+		<form action="" method="get">
+			<h1>Contate-nos</h1>
+			<section class="primeira-sessao">
+				<!-- Primeiro nome -->
+				<div class="text-name">
+					<label for="name">Nome <span class="obrigatorio">*</span>
+						<input type="text" name="userName" id="name">
+					</label>
+				</div>
+				<!-- Primeiro nome -->
+
+				<!-- Sobrenome -->
+				<div class="text-name">
+					<label for="lastname">Sobrenome <span class="obrigatorio">*</span>
+						<input type="text" name="user-last-name" id="lastname">
+					</label>
+				</div>
+				<!-- Sobrenome -->
+			</section>
+
+			<!-- Email -->
+			<div class="text-email">
+				<label for="email">Email <span class="obrigatorio">*</span>
+					<input type="email" name="userEmail" id="email">
+				</label>
+			</div>
+
+			<div class="query-type">
+				<label for="query-type">Tipo de Consulta<span class="obrigatorio">*</span></label>
+			</div>
+
+			<section class="terceira-sessao">
+				<div>
+					<input type="radio" name="payment" id="card" checked="checked" />
+					<label class="user-radio" for="card">Inquérito Geral</label>
+				</div>
+
+				<div>
+					<input type="radio" name="payment" id="cash" checked="checked" />
+					<label class="user-radio" for="cash">Solicitação de Suporte</label>
+				</div>
+			</section>
+
+			<div class="text-area">
+				<label for="query-type">Menssagem<span class="obrigatorio">*</span></label>
+				<textarea name="user-comment" id="comment"></textarea>
+			</div>
+
+			<div class="confirmacao">
+				<input type="checkbox" name="userLgpt" id="userLgptTerm" value="accepted" required>
+				<label for="userLgptTerm">Eu concordo em ser contatado pela equipe<span class="obrigatorio">*</span></label><br>
+			</div>
+
+			<div class="submit">
+				<button type="button">Submit</button>
+			</div>
+
+		</form>
+	</main>
 </body>
+
 </html>
