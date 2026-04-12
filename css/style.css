@@ -249,3 +249,54 @@ button:hover {
 .confirmacao.error label {
 	color: red;
 }
+
+@media (max-width: 320px) {
+	h1 {
+		text-align: center;
+	}
+
+	.primeira-sessao {
+		display: block;
+	}
+
+	.terceira-sessao {
+		display: block;
+	}
+
+	section div {
+		margin-bottom: 15px;
+	}
+
+	textarea {
+    border: 1px solid #cccaca;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    height: 20vh;
+    font-size: 15px;
+    font-family: 'Karla';
+    padding: 5px;
+}
+
+	.confirmacao label {
+		font-size: 10px;
+	}
+
+	.confirmacao {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		margin: 15px 0;
+		flex-wrap: wrap;
+	}
+
+	.confirmacao input[type="checkbox"] {
+		transform: scale(1.2);
+		margin: 0px 1px;
+		position: relative;
+		accent-color: #0C7D69;
+		top: 1px;
+	}
+
+
+}
