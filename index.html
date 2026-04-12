@@ -5,12 +5,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/snackbar.css">
 	<title>Formulário de contato</title>
 </head>
 
 <body>
 	<main>
-		<form action="" method="get" novalidate>
+		<form id="contactForm" action="" method="get" novalidate>
 			<h1>Contate-nos</h1>
 			<section class="primeira-sessao">
 				<!-- Primeiro nome -->
@@ -63,17 +64,26 @@
 			</div>
 
 			<div class="confirmacao">
-				<input type="checkbox" name="userLgpt" id="userLgptTerm" value="accepted" required />
+				<input type="checkbox" name="userLgpt" id="userLgptTerm" required>
+				<label for="userLgptTerm">
+					Eu concordo em ser contatado pela equipe
+					<span class="obrigatorio">*</span>
+				</label>
+
 				<small class="error-message"></small>
-				<label for="userLgptTerm">Eu concordo em ser contatado pela equipe<span class="obrigatorio">*</span></label><br>
 			</div>
 
-			<div class="submit">
-				<button type="submit">Submit</button>
+			<button type="submit">Enviar</button>
+
+			<div id="snackbar">
+				<span class="icon">✔</span>
 			</div>
+
 		</form>
 	</main>
 	<script src="js/scripts.js"></script>
+	<script type="module" src="js/form.js"></script>
+
 </body>
 
 </html>
