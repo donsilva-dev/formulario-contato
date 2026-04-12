@@ -1,13 +1,13 @@
 @font-face {
 	font-family: "Karla";
-	src: url("/font/Karla-Bold.ttf") format("truetype");
+	src: url("../font/Karla-Bold.ttf") format("truetype");
 	font-style: normal;
 	font-display: swap;
 }
 
 @font-face {
 	font-family: "Karla";
-	src: url("/font/Karla-Regular.ttf") format("truetype");
+	src: url("../font/Karla-Regular.ttf") format("truetype");
 	font-style: normal;
 	font-display: swap;
 }
@@ -297,6 +297,4 @@ button:hover {
 		accent-color: #0C7D69;
 		top: 1px;
 	}
-
-
 }
